@@ -79,18 +79,27 @@ String::CamelSnakeKebab - word case conversion
 
     use String::CamelSnakeKebab qw/:all/;
 
-    CamelCase 'flux-capacitor)
-    ; => 'FluxCapacitor
+    lower_camel_case 'flux-capacitor'
+    # => 'fluxCapacitor
 
-    (->SNAKE_CASE "I am constant")
-    ; => "I_AM_CONSTANT"
+    upper_camel_case 'flux-capacitor'
+    # => 'FluxCapacitor
 
-    (->kebab-case :object_id)
-    ; => :object-id
+    lower_snake_case 'ASnakeSlithersSlyly'
+    # => 'a_snake_slithers_slyly'
 
-    (->HTTP-Header-Case "x-ssl-cipher")
-    ; => "X-SSL-Cipher"
-    
+    upper_snake_case 'ASnakeSlithersSlyly'
+    # => 'A_Snake_Slithers_Slyly'
+
+    constant_case "I am constant"
+    # => "I_AM_CONSTANT"
+
+    kebab_case 'Peppers_Meat_Pineapple'
+    # => 'peppers-meat-pineapple'
+
+    http_header_case "x-ssl-cipher"
+    # => "X-SSL-Cipher"
+
 
 =head1 DESCRIPTION
 
