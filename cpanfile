@@ -1,2 +1,5 @@
-requires 'Test::Most';
-requires 'Exporter::Shiny';
+requires 'Sub::Exporter';
+
+on 'test' => sub {
+    requires 'Test::Most';
+};
