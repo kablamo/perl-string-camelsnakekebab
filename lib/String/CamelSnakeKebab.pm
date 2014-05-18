@@ -103,6 +103,10 @@ String::CamelSnakeKebab - word case conversion
 
 =head1 DESCRIPTION
 
+=head1 AUTHOR
+
+Eric Johnson (kablamo)
+
 =cut
 
 1;
