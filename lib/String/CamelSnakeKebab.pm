@@ -71,4 +71,29 @@ our %CONVERSION_RULES = (
     }
 }
 
+=head1 NAME
+
+String::CamelSnakeKebab - word case conversion
+
+=head1 SYNPOSIS
+
+    use String::CamelSnakeKebab qw/:all/;
+
+    CamelCase 'flux-capacitor)
+    ; => 'FluxCapacitor
+
+    (->SNAKE_CASE "I am constant")
+    ; => "I_AM_CONSTANT"
+
+    (->kebab-case :object_id)
+    ; => :object-id
+
+    (->HTTP-Header-Case "x-ssl-cipher")
+    ; => "X-SSL-Cipher"
+    
+
+=head1 DESCRIPTION
+
+=cut
+
 1;
