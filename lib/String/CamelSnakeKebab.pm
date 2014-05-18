@@ -1,5 +1,4 @@
 package String::CamelSnakeKebab;
-
 use strict;
 use warnings;
 
@@ -12,6 +11,8 @@ use Sub::Exporter -setup => { exports => [qw/
     kebab_case
     http_header_case
 /]};
+
+our $VERSION = "0.01";
 
 our %UPPER_CASE_HTTP_HEADERS = map { $_ => 1 } 
     qw/ CSP ATT WAP IP HTTP CPU DNT SSL UA TE WWW XSS MD5 /;
