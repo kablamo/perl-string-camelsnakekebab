@@ -103,6 +103,30 @@ String::CamelSnakeKebab - word case conversion
 
 =head1 DESCRIPTION
 
+Camel-Snake-Kebab is a Clojure library for word case conversions.  This library
+is ported from the original Clojure.
+
+=head1 METHODS
+
+=head2 lower_camel_case()
+
+=head2 upper_camel_case()
+
+=head2 lower_snake_case()
+
+=head2 upper_snake_case()
+
+=head2 constant_case()
+
+=head2 kebab_case()
+
+=head2 http_header_case()
+
+
+=head1 SEE ALSO
+
+The original Camel Snake Kebab clojure library: https://github.com/qerub/camel-snake-kebab
+
 =head1 AUTHOR
 
 Eric Johnson (kablamo)
