@@ -23,7 +23,7 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    name            => 'String::CamelSnakeKebab',
+    name            => 'String-CamelSnakeKebab',
     module_name     => 'String::CamelSnakeKebab',
     allow_pureperl => 0,
 
