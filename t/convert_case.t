@@ -1,5 +1,5 @@
 use Test::Most;
-use DDP { deparse => 1 };
+use Data::Printer { deparse => 1 };
 use String::CamelSnakeKebab qw/:all/;
 
 my %tests = (

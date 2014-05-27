@@ -125,7 +125,7 @@ is ported from the original Clojure.
 
 =head1 SEE ALSO
 
-The original Camel Snake Kebab clojure library: https://github.com/qerub/camel-snake-kebab
+The original Camel Snake Kebab Clojure library: L<https://github.com/qerub/camel-snake-kebab>
 
 =head1 AUTHOR
 
