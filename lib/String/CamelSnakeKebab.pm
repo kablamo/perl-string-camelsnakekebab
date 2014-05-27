@@ -12,7 +12,7 @@ use Sub::Exporter -setup => { exports => [qw/
     http_header_case
 /]};
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 our %UPPER_CASE_HTTP_HEADERS = map { $_ => 1 } 
     qw/ CSP ATT WAP IP HTTP CPU DNT SSL UA TE WWW XSS MD5 /;
