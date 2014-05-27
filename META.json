@@ -65,7 +65,7 @@
          "web" : "https://github.com/kablamo/perl-string-camelsnakekebab"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Eric Johnson <eric.git@iijo.org>"
    ]
