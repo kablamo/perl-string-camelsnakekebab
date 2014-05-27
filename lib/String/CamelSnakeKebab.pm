@@ -31,7 +31,7 @@ our $WORD_SEPARATOR_PATTERN = qr/
         -                          |
         (?<=[A-Z])(?=[A-Z][a-z])   |
         (?<=[^A-Z_-])(?=[A-Z])     |
-        (?<=[A-Za-z])(?=[^A-Za-z])
+        (?<=[A-Za-z0-9])(?=[^A-Za-z0-9])
     )
 /x;
 

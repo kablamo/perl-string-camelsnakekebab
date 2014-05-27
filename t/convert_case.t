@@ -6,6 +6,7 @@ my %tests = (
     'FluxCapacitor'          => sub { upper_camel_case 'flux-capacitor'         },
     'fluxCapacitor'          => sub { lower_camel_case 'flux-capacitor'         },
     'a_snake_slithers_slyly' => sub { lower_snake_case 'ASnakeSlithersSlyly'    },
+    'address1'               => sub { lower_snake_case 'address1'               },
     'A_Snake_Slithers_Slyly' => sub { upper_snake_case 'ASnakeSlithersSlyly'    },
     'I_AM_CONSTANT'          => sub { constant_case    'I am constant'          },
     'peppers-meat-pineapple' => sub { kebab_case       'Peppers_Meat_Pineapple' },
