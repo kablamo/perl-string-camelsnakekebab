@@ -54,7 +54,7 @@ is ported from the original Clojure.
 
 # SEE ALSO
 
-The original Camel Snake Kebab clojure library: https://github.com/qerub/camel-snake-kebab
+The original Camel Snake Kebab Clojure library: [https://github.com/qerub/camel-snake-kebab](https://github.com/qerub/camel-snake-kebab)
 
 # AUTHOR
 

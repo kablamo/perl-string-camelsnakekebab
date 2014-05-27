@@ -48,6 +48,7 @@
       },
       "test" : {
          "requires" : {
+            "Data::Printer" : "0",
             "Test::Most" : "0"
          }
       }
