@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kablamo/perl-string-camelsnakekebab.svg?branch=master)](https://travis-ci.org/kablamo/perl-string-camelsnakekebab)
 # NAME
 
 String::CamelSnakeKebab - word case conversion
@@ -27,8 +28,6 @@ String::CamelSnakeKebab - word case conversion
     http_header_case "x-ssl-cipher"
     # => "X-SSL-Cipher"
 
-
-
 # DESCRIPTION
 
 Camel-Snake-Kebab is a Clojure library for word case conversions.  This library
@@ -49,8 +48,6 @@ is ported from the original Clojure.
 ## kebab\_case()
 
 ## http\_header\_case()
-
-
 
 # SEE ALSO
 
