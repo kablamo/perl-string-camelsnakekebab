@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kablamo/perl-string-camelsnakekebab.svg?branch=master)](https://travis-ci.org/kablamo/perl-string-camelsnakekebab)
+[![Build Status](https://travis-ci.org/kablamo/perl-string-camelsnakekebab.svg?branch=master)](https://travis-ci.org/kablamo/perl-string-camelsnakekebab) [![Coverage Status](https://img.shields.io/coveralls/kablamo/perl-string-camelsnakekebab/master.svg)](https://coveralls.io/r/kablamo/perl-string-camelsnakekebab?branch=master)
 # NAME
 
 String::CamelSnakeKebab - word case conversion
