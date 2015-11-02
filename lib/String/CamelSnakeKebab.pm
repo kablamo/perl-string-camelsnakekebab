@@ -38,6 +38,8 @@ our $WORD_SEPARATOR_PATTERN = qr/
 sub convert_case {
     my ($first_coderef, $rest_coderef, $separator, $string) = @_;
 
+    return '' if $string eq '';
+
     my ($first, @rest) = split $WORD_SEPARATOR_PATTERN, $string;
 
     my @words = $first_coderef->($first);
