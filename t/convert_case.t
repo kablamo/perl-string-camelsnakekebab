@@ -22,4 +22,11 @@ while ( my ($expected_answer, $test_this) = each %tests ) {
 
 }
 
+{
+    my $warnings = 0;
+    local $SIG{__WARN__} = sub { $warnings++ };
+    is( lower_snake_case(''), '', 'empty string unchanged' );
+    is( $warnings, 0, 'empty string causes no warnings' );
+}
+
 done_testing;
