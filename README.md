@@ -49,6 +49,13 @@ is ported from the original Clojure.
 
 ## http\_header\_case()
 
+# ERROR HANDLING
+
+Invalid input is usually indicated by returning the empty string.  So you may
+want to check the return value.  This happens if you pass in something crazy
+like "\_\_\_" or "\_-- \_" or "".  Because what does it mean to lower camel case
+"\_-- \_"?  I don't know and I don't want to think about it any more.
+
 # SEE ALSO
 
 The original Camel Snake Kebab Clojure library: [https://github.com/qerub/camel-snake-kebab](https://github.com/qerub/camel-snake-kebab)

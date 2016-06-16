@@ -12,7 +12,7 @@ use Sub::Exporter -setup => { exports => [qw/
     http_header_case
 /]};
 
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 
 our %UPPER_CASE_HTTP_HEADERS = map { $_ => 1 } 
     qw/ CSP ATT WAP IP HTTP CPU DNT SSL UA TE WWW XSS MD5 /;
@@ -126,6 +126,12 @@ is ported from the original Clojure.
 
 =head2 http_header_case()
 
+=head1 ERROR HANDLING
+
+Invalid input is usually indicated by returning the empty string.  So you may
+want to check the return value.  This happens if you pass in something crazy
+like "___" or "_-- _" or "".  Because what does it mean to lower camel case
+"_-- _"?  I don't know and I don't want to think about it any more.
 
 =head1 SEE ALSO
 
