@@ -42,6 +42,8 @@ sub convert_case {
 
     my ($first, @rest) = split $WORD_SEPARATOR_PATTERN, $string;
 
+    $first = '' unless $first;
+
     my @words = $first_coderef->($first);
     push @words, $rest_coderef->($_) for @rest;
 
