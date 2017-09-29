@@ -10,6 +10,7 @@ use Sub::Exporter -setup => { exports => [qw/
     constant_case
     kebab_case
     http_header_case
+    word_split
 /]};
 
 our $VERSION = "0.05";
@@ -35,12 +36,16 @@ our $WORD_SEPARATOR_PATTERN = qr/
     )
 /x;
 
+sub word_split {
+    split $WORD_SEPARATOR_PATTERN, $_[0];
+}
+
 sub convert_case {
     my ($first_coderef, $rest_coderef, $separator, $string) = @_;
 
     return '' if $string eq '';
 
-    my ($first, @rest) = split $WORD_SEPARATOR_PATTERN, $string;
+    my ($first, @rest) = word_split($string);
 
     $first = '' unless $first;
 
@@ -104,6 +109,12 @@ String::CamelSnakeKebab - word case conversion
     http_header_case "x-ssl-cipher"
     # => "X-SSL-Cipher"
 
+    word_split 'ASnakeSlithersSlyly'
+    # => ["A", "Snake", "Slithers", "Slyly"]
+
+    word_split 'flux-capacitor'
+    # => ["flux", "capacitor"]
+
 
 =head1 DESCRIPTION
 
@@ -125,6 +136,8 @@ is ported from the original Clojure.
 =head2 kebab_case()
 
 =head2 http_header_case()
+
+=head2 word_split()
 
 =head1 ERROR HANDLING
 

@@ -1,7 +1,5 @@
 use Test::Most;
-use String::CamelSnakeKebab;
-
-my $separator = $String::CamelSnakeKebab::WORD_SEPARATOR_PATTERN;
+use String::CamelSnakeKebab qw< word_split >;
 
 my %tests = (
     "foo bar"    => [qw/foo bar/],
@@ -17,7 +15,7 @@ my %tests = (
     "foo1Bar"    => [qw/foo1 Bar/],
 );
 
-cmp_deeply [ split $separator, $_ ] => $tests{$_}, 
+cmp_deeply [ word_split($_) ] => $tests{$_},
     sprintf "%8s -> %s", $_, join " ", @{ $tests{$_} }
         for sort keys %tests;
 
