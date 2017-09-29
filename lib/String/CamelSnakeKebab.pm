@@ -13,7 +13,7 @@ use Sub::Exporter -setup => { exports => [qw/
     word_split
 /]};
 
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 our %UPPER_CASE_HTTP_HEADERS = map { $_ => 1 } 
     qw/ CSP ATT WAP IP HTTP CPU DNT SSL UA TE WWW XSS MD5 /;
